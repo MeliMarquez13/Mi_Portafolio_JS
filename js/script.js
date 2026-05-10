@@ -1,3 +1,7 @@
+// ESPERAR A QUE CARGUE LA PAGINA
+
+document.addEventListener("DOMContentLoaded", function(){
+
 // SWEET ALERT
 
 function mensaje(){
@@ -10,24 +14,34 @@ function mensaje(){
 
 }
 
+window.mensaje = mensaje;
+
 // TYPED.JS
 
-var typed = new Typed('#texto', {
+if(document.getElementById('texto')){
 
-    strings: [
-        'Bienvenido a mi sitio web',
-        'Jacob Elordi',
-        'Actor australiano'
-    ],
+    var typed = new Typed('#texto', {
 
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop:true
-});
+        strings: [
+            'Bienvenido a mi sitio web',
+            'Jacob Elordi',
+            'Actor australiano'
+        ],
+
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop:true
+    });
+
+}
 
 // AOS
 
-AOS.init();
+if(typeof AOS !== "undefined"){
+
+    AOS.init();
+
+}
 
 // PREGUNTAS FRECUENTES
 
@@ -85,3 +99,5 @@ if(ctx){
     });
 
 }
+
+});
