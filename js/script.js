@@ -1,4 +1,4 @@
-// SweetAlert
+// SWEET ALERT
 
 function mensaje(){
 
@@ -10,7 +10,7 @@ function mensaje(){
 
 }
 
-// Typed.js
+// TYPED.JS
 
 var typed = new Typed('#texto', {
 
@@ -29,38 +29,59 @@ var typed = new Typed('#texto', {
 
 AOS.init();
 
-// Preguntas frecuentes
+// PREGUNTAS FRECUENTES
 
 var acc = document.getElementsByClassName("acordeon");
 
 for (let i = 0; i < acc.length; i++) {
 
-  acc[i].addEventListener("click", function () {
+    acc[i].addEventListener("click", function () {
 
-    this.classList.toggle("activo");
+        this.classList.toggle("activo");
 
-    var panel = this.nextElementSibling;
+        var panel = this.nextElementSibling;
 
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+        if (panel.style.display === "block") {
 
-  });
+            panel.style.display = "none";
+
+        } else {
+
+            panel.style.display = "block";
+
+        }
+
+    });
+
 }
 
-// Grafica de barras
+// GRAFICA DE BARRAS
 
 const ctx = document.getElementById('miGrafica');
 
-new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Euphoria', 'Saltburn', 'The Kissing Booth'],
-        datasets: [{
-            label: 'Popularidad',
-            data: [95, 85, 100]
-        }]
-    }
-});
+if(ctx){
+
+    new Chart(ctx, {
+
+        type: 'bar',
+
+        data: {
+
+            labels: [
+                'Euphoria',
+                'Saltburn',
+                'The Kissing Booth'
+            ],
+
+            datasets: [{
+
+                label: 'Popularidad',
+
+                data: [95, 85, 100]
+
+            }]
+        }
+
+    });
+
+}
