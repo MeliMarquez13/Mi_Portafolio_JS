@@ -5,11 +5,15 @@ body{
     text-align:center;
 }
 
+/* HEADER */
+
 header{
     background:#000;
     color:white;
     padding:20px;
 }
+
+/* MENU */
 
 nav{
     background:#444;
@@ -27,6 +31,8 @@ nav a:hover{
     color:#ffd700;
 }
 
+/* IMAGENES */
+
 .hero img,
 .contenido img{
     width:300px;
@@ -37,6 +43,8 @@ nav a:hover{
 .contenido{
     padding:30px;
 }
+
+/* GALERIA */
 
 .galeria{
     display:flex;
@@ -56,9 +64,13 @@ nav a:hover{
     transform:scale(1.05);
 }
 
+/* VIDEO */
+
 .video{
     padding:30px;
 }
+
+/* BOTON */
 
 .boton{
     padding:15px 25px;
@@ -75,13 +87,16 @@ nav a:hover{
     background:#333;
 }
 
+/* FOOTER */
+
 footer{
     background:#000;
     color:white;
     padding:20px;
+    margin-top:30px;
 }
 
-/* Animación */
+/* ANIMACION */
 
 .animacion{
     width:100px;
@@ -105,7 +120,15 @@ footer{
 
 }
 
+/* PREGUNTAS FRECUENTES */
+
+.faq{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
 .acordeon{
+
     background:#444;
     color:white;
     cursor:pointer;
@@ -114,17 +137,23 @@ footer{
     border:none;
     margin-top:10px;
     font-size:18px;
+    border-radius:10px;
 }
 
 .panel{
+
     display:none;
     background:white;
     width:80%;
     margin:auto;
-    padding:10px;
+    padding:15px;
+    border-radius:10px;
 }
 
+/* GRAFICA */
+
 .grafica{
+
     width:80%;
     margin:auto;
     padding:30px;
